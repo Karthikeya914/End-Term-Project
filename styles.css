@@ -61,7 +61,7 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 6px;
-    transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out, transform 0.2s;
 }
 
 button:hover {
@@ -120,10 +120,10 @@ canvas {
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .container {
-        width: 100%;
-        padding: 15px;
+        width: 95%;
+        padding: 20px;
     }
     
     input, select, button {
@@ -133,5 +133,32 @@ canvas {
 
     th, td {
         padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    h1, h2 {
+        font-size: 18px;
+    }
+
+    input, select, button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    th, td {
+        font-size: 12px;
+        padding: 6px;
     }
 }
